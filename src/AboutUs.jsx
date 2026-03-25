@@ -1,32 +1,20 @@
+
+Create/overwrite `src/AboutUs.jsx`:
+```jsx
 import React from 'react';
-import './AboutUs.css';
 
-function AboutUs() {
+const AboutUs = () => {
   return (
-    <div className="about-us-container">
-      {/* <h1 className="about-us-heading">About Us</h1> */}
-      <p className="about-us-description">Welcome to Paradise Nursery, where green meets serenity!</p>
-      <p className="about-us-content">
-        At Paradise Nursery, we are passionate about bringing nature closer to you. Our mission is to provide a wide range of 
-        high-quality plants that not only enhance the beauty of your surroundings but also contribute to a healthier and 
-        more sustainable lifestyle. From air-purifying plants to aromatic fragrant ones, we have something for every 
-        plant enthusiast.
-      </p>
-      {/* <p className="plant_logo_left"><img src="https://p1.hiclipart.com/preview/922/979/640/green-leaf-logo-emoji-seedling-emoticon-sticker-plant-plant-stem-flower-png-clipart-thumbnail.jpg" height='50px' width='50px' alt="" /></p> */}
-      <p className="about-us-content">
-        Our team of experts is dedicated to ensuring that each plant meets our strict standards of quality and care. 
-        Whether you're a seasoned gardener or just starting your green journey, we're here to support you every step of 
-        the way. Feel free to explore our collection, ask questions, and let us help you find the perfect plant for your 
-        home or office.
-      </p>
-      {/* <p className="plant_logo_right"><img src="https://p1.hiclipart.com/preview/922/979/640/green-leaf-logo-emoji-seedling-emoticon-sticker-plant-plant-stem-flower-png-clipart-thumbnail.jpg" height='50px' width='50px' alt="" /></p> */}
-
-      <p className="about-us-content">
-        Join us in our mission to create a greener, healthier world. Visit Paradise Nursery today and experience the 
-        beauty of nature right at your doorstep.
-      </p>
+    <div style={{ maxWidth: 1200, margin: '0 auto', padding: '30px 20px' }}>
+      <h1 style={{ color: '#2e7d32', fontSize: '2.2rem', marginBottom: '20px' }}>About Paradise Nursery</h1>
+      <div style={{ lineHeight: 1.8, fontSize: '1.1rem', color: '#333' }}>
+        <p>Welcome to Paradise Nursery, where green meets serenity! For over 10 years, we have been dedicated to bringing nature closer to homes and businesses with our premium selection of house plants.</p>
+        <p>Our mission is to make plant parenting easy and accessible for everyone, from beginners to experienced plant enthusiasts. We carefully curate our collection to include only the healthiest, most resilient plants that thrive in indoor environments.</p>
+        <p>From air-purifying plants that clean your indoor air, to aromatic plants that fill your space with natural fragrance, and medicinal plants with holistic benefits - we have something for every space and every need.</p>
+        <p>At Paradise Nursery, we believe that plants are more than just decor - they are a way to connect with nature, improve your wellbeing, and create a peaceful sanctuary in your home.</p>
+      </div>
     </div>
   );
-}
+};
 
 export default AboutUs;
